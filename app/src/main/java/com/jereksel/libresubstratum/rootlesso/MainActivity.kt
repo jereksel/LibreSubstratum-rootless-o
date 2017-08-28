@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         val clz = Class.forName("android.os.ServiceManager")
         val method = clz.getDeclaredMethod("getService", String::class.java)
 //        val overlay = IOverlayManager.Stub.asInterface(method.invoke(null, "overlay") as IBinder)
-        val overlay = getSystemService("overlay") as IOverlayManager
+//        val overlay = getSystemService("overlay") as IOverlayManager
 
-        println(overlay.getAllOverlays(0))
+//        println(overlay.getAllOverlays(0))
         finish()
     }
 }

@@ -12,8 +12,12 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo.Id.CLASS
 @JsonSubTypes(
         Type(value = HearthBeat::class, name = "HearthBeat"),
         Type(value = FailedInvocation::class, name = "FailedInvocation"),
-        Type(value = Message::class, name = "Message"),
         Type(value = OverlaysForTargetRequest::class, name = "OverlaysForTargetRequest"),
+        Type(value = OverlaysForTargetResult::class, name = "OverlaysForTargetResult"),
+        Type(value = OverlayInfoRequest::class, name = "OverlayInfoRequest"),
+        Type(value = OverlayInfoResult::class, name = "OverlayInfoResult"),
+        Type(value = Success::class, name = "Success"),
+        Type(value = EnableOverlays::class, name = "EnableOverlays"),
         Type(value = InstallPackage::class, name = "InstallPackage")
 )
 interface Message

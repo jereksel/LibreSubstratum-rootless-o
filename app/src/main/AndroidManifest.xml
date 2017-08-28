@@ -31,9 +31,13 @@
 
         </activity>
 
-        <service android:name=".RootlessOMSService"
+        <service android:name="com.jereksel.libresubstratum.rootlesso.RootlessOMSService"
             android:exported="true"
-            />
+            >
+            <intent-filter>
+                <action android:name="projekt.interfacer.INITIALIZE" />
+            </intent-filter>
+            </service>
     </application>
 
 </manifest>

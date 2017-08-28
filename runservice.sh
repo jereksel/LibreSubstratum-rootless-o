@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-APPPATH=$(adb shell pm path com.jereksel.libresubstratum.rootlesso)
+APPPATH=$(pm path com.jereksel.libresubstratum.rootlesso)
 
-adb shell CLASSPATH="${APPPATH}:/system/framework/framework-res.apk" /system/bin/app_process32 /system/bin com.jereksel.libresubstratum.rootlesso.MainClass
+CLASSPATH="${APPPATH}:/system/framework/framework-res.apk" /system/bin/app_process32 /system/bin com.jereksel.libresubstratum.rootlesso.MainClass
 
 #adb shell chgrp -R shell $DATAPATH
 #

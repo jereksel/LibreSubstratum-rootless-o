@@ -8,12 +8,12 @@ adb shell am start-activity -n com.jereksel.libresubstratum.rootlesso/.PrepareAc
 
 sleep 5
 
-BRIDGE2="$DATAPATH/bridge2"
-
-adb shell rm $BRIDGE2
-
-adb shell touch $BRIDGE2
-
-adb shell chmod 775 $BRIDGE2
+#BRIDGE2="$DATAPATH/bridge2"
+#
+#adb shell rm $BRIDGE2
+#
+#adb shell touch $BRIDGE2
+#
+#adb shell chmod 775 $BRIDGE2
 
 adb shell am start-activity -n com.jereksel.libresubstratum.rootlesso/.PrepareActivity2

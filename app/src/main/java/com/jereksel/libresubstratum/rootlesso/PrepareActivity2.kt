@@ -16,12 +16,12 @@ class PrepareActivity2 : Activity() {
         dataLocation.mkdirs()
 
         //I really, REALLY don't like it, but I'm afraid there isn't another way that isn't overcomplicated
-        val bridgeFile = File(dataLocation, "bridge1")
-        val bridgeFileLoc = bridgeFile.absolutePath
+        val bridge2File = File(dataLocation, "bridge2")
+//        val bridgeFileLoc = bridgeFile.absolutePath
 
-        if (!bridgeFile.exists()) {
-            bridgeFile.createNewFile()
-        }
+//        if (!bridgeFile.exists()) {
+//            bridgeFile.createNewFile()
+//        }
 
 //        dataDir.setExecutable(true, false)
 //
@@ -33,6 +33,7 @@ class PrepareActivity2 : Activity() {
 //        bridgeFile.setReadable(true, false)
 
         "chmod -R 775 $dataLocation".execute()
+        "chmod 777 ${bridge2File.absolutePath}".execute()
 
         //Prepare directories for "service"
 //
